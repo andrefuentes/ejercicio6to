@@ -11,14 +11,11 @@ var area=function(operacion,dato1,dato2){
 	return operacion(dato1,dato2);
 }
 var opcion=3;
-
-switch(opcion){
-	case 1:
-	console.log(Triangulo(base,altura ))
-	break;
-	case 2:
-	console.log(cuadrado(base, altura))
-	break;
-	case 3:
-	console.log(circulo(radio))
+if (opcion==1)
+{
+	console.log(area(Triangulo,base,altura))
+}elif(opcion==2){
+	console.log(area(cuadrado,base,altura))
+}else(opcion==3){
+	console.log(area(circulo,radio))
 }
